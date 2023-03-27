@@ -37,10 +37,17 @@ class list extends StatelessWidget {
                   ],
                 ),
               ),
-            
           ],
         ),)
-        
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const Tambah()));
+          },
+          child: const Text('Kembali'),
+        ),
       ),
     );
   }
